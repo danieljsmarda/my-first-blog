@@ -6,18 +6,11 @@
     <div>
       <h1><a href="">Django Girls Blog</a></h1>
     </div>
-
-    <div>
-      <p>published: June 24th, 2017</p>
-      <h2><a href="">My first post</a></h2>
-      <p>This is an example of a <strong>first</strong> blog post</p>
-    </div>
-
-
-    <div>
-      <p>published: June 25h, 2017</p>
-      <h2><a href="">My second post</a></h2>
-      <p>This is an example of a <strong>second</strong> blog post</p>
-    </div>
+    {% for post in posts %}
+      <div>
+        <p>published: {{post.published_date}}</p>
+        <h1><a href="">{{post.title}}</a></h1>
+        <p>{{post.text|linebreaksbr}}
+    {% endfor %}
   </body>
 </html>
