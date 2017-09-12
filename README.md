@@ -7,3 +7,5 @@ HTML, and CSS. I completed both this and the
 7-part tutorial on the Django Foundation
 website in a successful attempt to teach myself
 web development in summer 2017.
+
+The website is published at danieljsmarda.pythonanywhere.com
